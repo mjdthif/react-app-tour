@@ -1,0 +1,25 @@
+@import "../../index.scss";
+
+.Tour-list {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .Tour-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .Tour-list {
+    width: 85vw;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .Tour-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
